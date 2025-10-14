@@ -1,0 +1,7 @@
+Guia rapida: 
+*apretar algun numero para cada decision
+*en el caso de "insertar csvs" yo lo hice con mi ruta "C:/Users/.../Desktop/TareasPYTHON/2025/clientes.csv" 
+pero vos tenes que poner la propia ruta donde se encuentren los csvs 
+(en este caso, con la carpeta en la que este archivo se encuentra)
+
+*tener xampp conectado y la base de datos "prueba1" importada (o una extremadamente similar)
