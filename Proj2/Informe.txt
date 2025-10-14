@@ -1,0 +1,111 @@
+Informe: Análisis de Recompra (tp 2)
+--------------------------------------------------------------------------
+Objetivo del proyecto
+
+El propósito fue analizar la efectividad de una campaña de promociones para determinar qué factores influyen en la recompra de los clientes y construir un modelo predictivo que ayude a tomar decisiones de marketing.
+
+Etapas del análisis
+---------------
+1. Carga y exploración de datos
+
+*Se importó un archivo Excel con información de clientes, promociones y recompra.
+
+*Se usaron las librerías pandas y numpy para procesar los datos.
+-------------
+Se revisó:
+
+Estructura (info()),
+
+Estadísticas descriptivas (describe()),
+
+Valores nulos y distribución de variables.
+
+Esto permitió conocer la calidad de los datos y el comportamiento general de las variables (Genero, Recibio_Promo, Recompra, etc.).
+-------------
+2. Análisis inicial de efectividad
+
+Se comparó la tasa de recompra entre clientes que recibieron promoción y los que no.
+
+Se calcularon métricas como:
+
+*Porcentaje de clientes con/sin promoción.
+
+*Tasa de recompra en cada grupo.
+
+Con esto se obtuvo una idea del impacto real de las promociones sobre las ventas repetidas.
+-------------
+3. Transformación y codificación
+
+Las variables categóricas se convirtieron en valores numéricos para poder ser procesadas por el modelo:
+
+Género: F → 0, M → 1
+
+Recibió promoción: Sí → 1, No → 0
+
+Recompra: Sí → 1, No → 0
+
+Esta etapa es parte del preprocesamiento de datos.
+-------------
+4. Modelado predictivo (Árbol de Decisión)
+
+Se usó un modelo de clasificación supervisado (DecisionTreeClassifier) de scikit-learn.
+
+El dataset se dividió en entrenamiento (80%) y prueba (20%).
+
+El modelo aprendió a predecir si un cliente volverá a comprar.
+
+Se evaluó con:
+
+Matriz de confusión
+
+Reporte de clasificación (precisión, recall, F1-score)
+
+Accuracy total del modelo
+
+Importancia de variables
+
+El árbol de decisión permitió visualizar qué factores tienen mayor peso (por ejemplo, monto de promoción, ingresos o edad).
+-------------
+5. Recomendaciones estratégicas
+
+Con base en los resultados, se propusieron acciones como:
+
+Incrementar las promociones entre $600 y $800.
+
+Priorizar clientes con ingresos mayores a $40,000.
+
+Implementar programas de lealtad post-compra.
+
+Apuntar al rango de edad de 35 a 50 años.
+
+Personalizar las ofertas según historial de compras.
+-------------
+6. Visualización en Dashboard (Tkinter + Matplotlib + Seaborn)
+
+Se creó una interfaz visual simple con Tkinter para mostrar:
+
+Tasa de recompra con/sin promoción.
+
+Variables más importantes del modelo.
+
+Distribución general de recompra.
+
+Métricas clave del modelo (precisión, variables relevantes, conclusiones).
+
+Se usaron gráficos de barras y tortas integrados con matplotlib y seaborn.
+
+📊 Conclusiones
+
+La campaña de promociones tuvo un impacto positivo en la recompra, especialmente en segmentos específicos de ingresos y edad.
+
+El modelo de decisión obtuvo una buena precisión, mostrando que las promociones son un factor importante pero no el único.
+
+La herramienta desarrollada automatiza el análisis y la visualización, permitiendo tomar decisiones basadas en datos.
+
+⚙️ Librerías utilizadas
+Librería	Uso principal
+pandas	Análisis y limpieza de datos
+numpy	Operaciones numéricas
+matplotlib / seaborn	Gráficos y visualizaciones
+scikit-learn	Creación del modelo predictivo
+tkinter	Interfaz gráfica del dashboard
