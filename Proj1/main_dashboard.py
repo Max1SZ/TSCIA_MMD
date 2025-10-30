@@ -1365,7 +1365,7 @@ elif opcion == "🗄️ Base de Datos SQL":
             st.info("""
             **Configuración actual:**
             - Host: localhost
-            - Base de datos: empresa_ca
+            - Base de datos: prueba3
             - Motor: MySQL
             
             *Configura la conexión en functions.py*
@@ -1421,3 +1421,4 @@ with col2:
 
 with col3:
     st.markdown(f"📅 {datetime.now().strftime('%Y')}")
+
