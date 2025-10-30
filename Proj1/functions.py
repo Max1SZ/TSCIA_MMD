@@ -24,8 +24,9 @@ import pandas as pd
 import sqlalchemy
 import matplotlib.pyplot as plt
 
-# Conexión a la base de datos (ajusta los datos según tu entorno)
-engine = sqlalchemy.create_engine("mysql+pymysql://root:@localhost/prueba3")
+# Conexión a la base de datos (cambia prueba1 por tu base si deseas.)
+
+engine = sqlalchemy.create_engine("mysql+pymysql://root:@localhost/prueba1")
 
 # Diccionario para almacenar los DataFrames y sus rutas
 # Diccionario global
