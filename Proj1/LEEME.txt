@@ -6,3 +6,5 @@ SINO cambiar la direccion en functions:
 engine = sqlalchemy.create_engine("mysql+pymysql://root:@localhost/[ACA TU BASE DE DATOS]") 
 
 *Tener los CSVs a mano para conveniencia
+
+*en el caso que las claves foraneas intervengan por x o y error, puede crear una bd SIN foraneas, ahi si puede funcionar.
